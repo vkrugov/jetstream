@@ -17,8 +17,16 @@
         "laravel/jetstream": "^1.4",
         "laravel/sanctum": "^2.6",
         "laravel/tinker": "^2.0",
-        "tightenco/ziggy": "^0.9.4"
+        "tightenco/ziggy": "^0.9.4",
+        "laravel/spark-aurelius": "~11.0",
+        "laravel/ui": "^2.0"
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://spark-satis.laravel.com"
+        }
+    ],
     "require-dev": {
         "facade/ignition": "^2.3.6",
         "fzaninotto/faker": "^1.9.1",

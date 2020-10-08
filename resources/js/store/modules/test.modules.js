@@ -1,11 +1,12 @@
 import {
-    GET_NUMBER
+    GET_NUMBER, SET_PROFILE
 } from "../actions/test.actions";
 
 import api from "../../config";
 
 const state = {
     number: null,
+    profile: {}
 };
 
 const actions = {
@@ -25,6 +26,9 @@ const actions = {
 const mutations = {
     [GET_NUMBER]: (state, data) => {
         state.number = data;
+    },
+    [SET_PROFILE]: (state, data) => {
+        state.profile = data;
     }
 };
 

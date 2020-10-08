@@ -1,13 +1,13 @@
 import VueRouter from "vue-router";
 
-import NewTest from "./Pages/NewTest";
+import MyTeam from "./Pages/MyTeam";
 
 const router =  new VueRouter ({
     routes: [
         {
-            path: '/new_test',
-            component: NewTest,
-            name: 'home'
+            path: '/my-team',
+            component: MyTeam,
+            name: 'myTeam'
         },
     ],
     mode: 'history'

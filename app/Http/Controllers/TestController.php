@@ -26,4 +26,14 @@ class TestController extends Controller
     {
         return \response()->json(rand(1, 10));
     }
+
+    /**
+     * Response
+     */
+    public function myTeam(): Response
+    {
+        $users = auth()->user()->currentTeam->allUsers();
+
+        return Inertia::render('MyTeam', ['users' => $users]);
+    }
 }

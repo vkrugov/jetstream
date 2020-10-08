@@ -12,6 +12,7 @@ import store from './store'
 
 Vue.mixin({ methods: { route } });
 Vue.use(InertiaApp);
+Vue.use(VueRouter);
 Vue.use(InertiaForm);
 Vue.use(PortalVue);
 Vue.use(BootstrapVue)

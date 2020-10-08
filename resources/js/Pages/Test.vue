@@ -9,7 +9,7 @@
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                    Test Page
+                    Test Profile:
                     <test-profile :profile="profile" />
                 </div>
             </div>
@@ -25,7 +25,7 @@ import TestProfile from './TestProfile'
 export default {
     props: {
         profile: {
-            default: 'empty'
+            default: null
         }
     },
     components: {

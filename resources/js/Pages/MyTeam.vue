@@ -9,7 +9,7 @@
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                    My Team: {}
+                    My Team: {{ user.current_team.name }}
                     <br />
                     <div v-if="users">
                         <div v-for="user in users" :key="user.id">
@@ -35,7 +35,10 @@ export default {
     props: {
         users: {
             required: true
-        }
+        },
+        user: {
+            required: true
+        },
     },
     components: {
         AppLayout
